@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paragraph</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+        /* h1 {
+           margin:auto;
+           width:344px;
+            font-size: 60px;
+            font-weight: 400;
+        }*/
+        body {
+            background: #343F4F;
+            display: inline;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            min-height: 41vh;
+            background: #343F4F;
+        }
+
+        .wrapper .static-txt {
+            color: #fff;
+            font-size: 60px;
+            font-weight: 400;
+        }
+
+        .wrapper .dynamic-txts {
+            margin-left: 15px;
+            height: 90px;
+            line-height: 80px;
+            overflow: hidden;
+        }
+
+        .dynamic-txts li {
+            color: #FC6D6D;
+            list-style: none;
+            font-size: 60px;
+            font-weight: 500;
+            position: relative;
+            top: 0;
+            animation: slide 4s steps(2) infinite;
+        }
+
+        @keyframes slide {
+            100% {
+                top: -360px;
+            }
+        }
+
+        .dynamic-txts li span {
+            position: static;
+
+        }
+
+        .dynamic-txts li span::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #343F4F;
+            border-left: 2px solid #FC6D6D;
+            animation: typing 1s steps(11) infinite;
+        }
+
+        @keyframes typing {
+            100% {
+                left: 100%;
+                margin: 0 -35px 0 35px;
+            }
+        }
+
+        .navbar {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: white;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            height: 110px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            padding-top: 13px;
+        }
+
+        .navbar li a {
+             display:flex;
+             flex-wrap: wrap;
+            padding-left: 200px;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(168, 92, 29);
+            font-weight: 700;
+        }
+
+        .navbar p {
+            position: absolute;
+            left: 50%;
+            margin: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+        }
+
+
+
+        .intro {
+            margin: auto;
+            width: 50%;
+            display: block;
+            margin-bottom: 64px;
+
+        }
+
+        .intro p {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contact a {
+            margin: auto;
+            width: 344px;
+            border-radius: 60px;
+            font-family: Arial;
+            color: #f2f2f2;
+            font-size: 21px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+        }
+
+        header img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img src="/WhatsApp Image 2021-06-26 at 20.51.46.jpeg" alt="" width="12%" height="12%">
+    </header>
+    <div class="wrapper">
+        <div class="static-txt">Hello! I'm</div>
+        <ul class="dynamic-txts">
+            <li><span>APARNA BHATT</span></li>
+        </ul>
+    </div>
+    <div class="intro">
+        <h2>ABOUT ME</h2>
+        <p>
+            I completed my schooling from ST MARY'S CONVENT SR.SECONDARY SCHOOL,UDAIPUR,RAJASTHAN.Currently a student at IIITDMJ.
+             I love to code and
+            my main focus is website development.
+        </p>
+        <h2>Personality</h2>
+        <p>I am a very jolly kind of person. I love to talk to people,so feel free to talk to me anytime(but not at night)love to travel,and love to eat....</p>
+        <h2>
+            MY SKILLS</h2>
+        <h3>Compettitive programming</h3>
+
+        <p>
+            I am almost done with data structures and algorithms and am
+            Currently a 3* coder at codechef as well as have a newbie
+            status on codeforces.
+        </p>
+        <h3>Website Development</h3>
+        <p>I am new at developing website.This is my first website.</p>
+        <h3>Sports skills</h3>
+        <p>I am a NATIONAL LEVEL BASKETBALL player.I love to play this game as it teaches teamwork,which is a very
+            important skill that a computer science student must have.</p>
+        <h3>Speaking skills</h3>
+        <p>I am also good at speaking .I have won many medals at school level.I can speak english fluently.</p>
+    </div>
+    <div class="contact">
+        <a href="#">CONTACT ME</a>
+    </div>
+    <footer class="navbar">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/arnab-mondal-a7b653200/">LinkedIn</a></li>
+            <li> <a href="https://twitter.com/Arkane151">Twitter</a></li>
+            <li><a href="https://github.com/ArnabMdev">Github</a></li>
+            <br>
+        </ul>
+        <p>&copy;APARNA BHATT.</p>
+    </footer>
+
+</body>
+
+</html>
